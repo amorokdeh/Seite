@@ -11,15 +11,16 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
+  private hostname : string = "https://wissenstranfer.herokuapp.com/"
   // Hier werden die Adressen, der funktionen in der Server.js gespeichert
-  private userUrl : string = 'http://localhost:8080/api/userlist';
-  private changeUserUrl : string = 'http://localhost:8080/api/changeUser';
-  private changeVerwaltungrUrl : string = 'http://localhost:8080/api/changeVerwaltung';
-  private registerUrl : string = 'http://localhost:8080/api/register';
-  private regVerwaltungUrl : string = 'http://localhost:8080/api/regVerwaltung';
-  private deleteUserUrl : string = 'http://localhost:8080/api/deleteUser';
-  private deleteUserInVerwaltungUrl : string = 'http://localhost:8080/api/deleteUserInVerwaltung';
-  private allUsersUrl : string = 'http://localhost:8080/api/allUsers';
+  private userUrl : string = this.hostname + '/api/userlist';
+  private changeUserUrl : string = this.hostname + '/api/changeUser';
+  private changeVerwaltungrUrl : string = this.hostname + '/api/changeVerwaltung';
+  private registerUrl : string = this.hostname + '/api/register';
+  private regVerwaltungUrl : string = this.hostname + '/api/regVerwaltung';
+  private deleteUserUrl : string = this.hostname + '/api/deleteUser';
+  private deleteUserInVerwaltungUrl : string = this.hostname + '/api/deleteUserInVerwaltung';
+  private allUsersUrl : string = this.hostname + '/api/allUsers';
 
   user: Observable<any>;
   Verwaltung: Observable<any>;
