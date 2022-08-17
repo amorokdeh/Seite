@@ -11,7 +11,7 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  private hostname : string = "https://wissenstranfer.herokuapp.com/"
+  private hostname : string = "https://wissenstranfer.herokuapp.com"
   // Hier werden die Adressen, der funktionen in der Server.js gespeichert
   private userUrl : string = this.hostname + '/api/userlist';
   private changeUserUrl : string = this.hostname + '/api/changeUser';
@@ -21,6 +21,7 @@ export class AuthService {
   private deleteUserUrl : string = this.hostname + '/api/deleteUser';
   private deleteUserInVerwaltungUrl : string = this.hostname + '/api/deleteUserInVerwaltung';
   private allUsersUrl : string = this.hostname + '/api/allUsers';
+
 
   user: Observable<any>;
   Verwaltung: Observable<any>;
