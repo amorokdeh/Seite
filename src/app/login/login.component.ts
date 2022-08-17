@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
   userCheck: User;
   adminBerechtigung:string = 'false';
   errorMes:string = " ";
+  interval;
   
   constructor(private authService: AuthService,
   private formBuilder: FormBuilder,
@@ -60,6 +61,10 @@ export class LoginComponent implements OnInit {
         //Automatische Weiterleitung zu Home
         this.router.navigate(['/']).then(() => {
           //window.location.reload();
+          this.interval = setInterval(() => {
+            window.location.reload();
+         }, 500);
+
         });
         //Loginbutton wird geswitched
         this.switchButtonMessage();
