@@ -59,7 +59,7 @@ export class LoginComponent implements OnInit {
         //this.permission = this.auth.canActivate();
         //Automatische Weiterleitung zu Home
         this.router.navigate(['/']).then(() => {
-          window.location.reload();
+          //window.location.reload();
         });
         //Loginbutton wird geswitched
         this.switchButtonMessage();
