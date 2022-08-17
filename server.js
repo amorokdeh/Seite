@@ -6,11 +6,6 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 
 var http = require('http').createServer(app);
-var io = require('socket.io')(http);
-
-io.on('connection', (socket) => { 
-    console.log('a user connected');
-});
 
 app.use(cors());
 // parse application/x-www-form-urlencoded
@@ -26,7 +21,9 @@ app.get('/', function(req,res)
 
 });
 
-app.listen(8080, function(){    
+const port = process.env.PORT || 8080
+
+app.listen(port, function(){    
   console.log("App listening on port http://localhost:8080");
 });
 
