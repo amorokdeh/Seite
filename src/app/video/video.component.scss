@@ -1,0 +1,22 @@
+.image img{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 50px;
+    width:100%;
+    height: auto;
+    object-fit: fill;
+  }
+
+  .videos {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  video {
+    width: 50%;
+    height:auto;
+  }

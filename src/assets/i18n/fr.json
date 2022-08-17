@@ -1,0 +1,62 @@
+{
+    "home": {
+        "brochures": "BROCHURES",
+        "instructions": "COSIGNES",
+        "video_instructions": "INSTRUCTIONS VIDÉO",
+        "cads": "DESSIN CAO",
+        "environment": "ENVIRONNEMENT / DURABILITÉ",
+        "performance_texts": "TEXTES DE PERFORMANCES",
+        "ce": "DECLARATION CE / BREVETS",
+        "cost_planning": "PLANIFICATION DES COÛTS", 
+        "references": "OBJETS DE RÉFÉRENCE"
+    },
+
+    "toolbar": {
+        "knowledge transfer": "Transfert de savoir",
+        "back": "Retour",
+        "search": "Chercher",
+        "log-in": "Connexion"
+    },
+
+    "brochures": {
+        "cassette_system": "Système de cassettes",
+        "quick_system": "Système rapide",
+        "wall_connection": "Connexion au mur",
+        "terrace_drainage": "Drainage de terrasse",
+        "atika_cover": "Couverture Atika",
+        "folding_plate": "Plaque pliante HB",
+        "first_construction": "Première construction",
+        "standing_seam": "Joint Debout",
+        "guttering": "Gouttières et Accessoires", 
+        "accessories": "Accessoires",
+        "color_tables": "Tableau des couleurs"
+    },
+
+    "instructions": {
+        "profile_form": "Formulaire de commande de profil",
+         "atika_form": "Formulaire de commande de couverture Atika",
+         "sh1_form": "Formulaire de commande SH1",
+        "cutting_profiles": "Coupe des profils HB",
+        "materials_storage": "Stockage des matériaux HB",
+        "system_division": "Division du système"
+
+    },
+
+    "performance": {
+        "step_protection": "Profil de protection des marches",
+        "pressure_rail": "Rail de pression"
+    },
+
+    "login": {
+        "sign_in": "Connecter",
+        "username": "Nom d'utilisateur",
+        "password": "Mot de passe"
+    },
+
+    "profil": {
+        "change_profile": "Changer de profil",
+        "new_username": "Nouveau nom d'utilisateur",
+        "new_password": "Nouveau mot de passe",
+        "current_password": "Mot de passe actuel"
+    }
+}

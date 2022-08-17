@@ -1,0 +1,62 @@
+{
+    "home": {
+        "brochures": "BROSZUR",
+        "instructions": "INSTRUKCJE",
+        "video_instructions": "INSTRUKCJE WIDEO",
+        "cads": "RYSUNKI CAD",
+        "environment": "ŚRODOWISKO",
+        "performance_texts": "TEKSTY O WYDAJNOŚCI",
+        "ce": "DEKLARACJA CE/PATENTY",
+        "cost_planning": "PLANOWANIE KOSZTÓW", 
+        "references": "OBIEKTY REFERENCYJNE"
+    },
+
+    "toolbar": {
+        "knowledge transfer": "Transfer wiedzy",
+        "back": "Plecy",
+        "search": "Szukaj",
+        "log-in": "Zaloguj się"
+    },
+    
+    "brochures": {
+        "cassette_system": "System kasetowy",
+        "quick_system": "Szybki system",
+        "wall_connection": "Połączenie ścienne",
+        "terrace_drainage": "Odwodnienie tarasu",
+        "atika_cover": "Okładka Atiki",
+        "folding_plate": "Płyta składana HB",
+        "first_construction": "Pierwsza budowa",
+        "standing_seam": "Rąbek stojący",
+        "guttering": "Orynnowanie i akcesoria", 
+        "accessories": "Akcesoria",
+        "color_tables": "Tabela kolorów"
+    },
+
+    "instructions": {
+        "profile_form": "Formularz zamówienia profilu",
+         "atika_form": "Formularz zamówienia okładki Atika",
+         "sh1_form": "Formularz zamówienia SH1",
+        "cutting_profiles": "Cięcie profili HB",
+        "materials_storage": "Przechowywanie materiałów HB",
+        "system_division": "Podział systemu"
+
+    },
+
+    "performance": {
+        "step_protection": "Profil ochrony stopni",
+        "pressure_rail": "Szyna ciśnieniowa"
+    },
+
+    "login": {
+        "sign_in": "Zaloguj się",
+        "username": "Nazwa użytkownika",
+        "password": "Hasło"
+    },
+
+    "profil": {
+        "change_profile": "Zmień profil",
+        "new_username": "Nowa nazwa użytkownika",
+        "new_password": "Nowe hasło",
+        "current_password": "Aktualne hasło"
+    }
+}

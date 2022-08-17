@@ -1,0 +1,62 @@
+{
+    "home": {
+        "brochures": "PROSPEKTE",
+        "instructions": "ANLEITUNGEN",
+        "video_instructions": "VIDEOANLEITUNGEN",
+        "cads": "CAD ZEICHNUNGEN",
+        "environment": "UMWELT / NACHHALTIGKEIT",
+        "performance_texts": "LV LEISTUNGSTEXTE",
+        "ce": "CE ERKLÄRUNG / PATENTE",
+        "cost_planning": "KOSTENPLANUNG", 
+        "references": "REFERENZOBJEKTE"
+    },
+
+    "toolbar": {
+        "knowledge transfer": "Wissenstransfer",
+        "back": "Zurück",
+        "search": "Suche",
+        "log-in": "Login"
+    },
+
+    "brochures": {
+        "cassette_system": "Kassettensystem",
+        "quick_system": "Schnellsystem",
+        "wall_connection": "Wandanschluss",
+        "terrace_drainage": "Terrassenentwässerung",
+        "atika_cover": "Atikaabdeckung",
+        "folding_plate": "Abkantblech vom HB",
+        "first_construction": "Firstkonstruktion",
+        "standing_seam": "Stehfalz",
+        "guttering": "Dachrinnen und Zubehör", 
+        "accessories": "Zubehör",
+        "color_tables": "Farbtabellen"
+    },
+
+    "instructions": {
+        "profile_form": "Profil Bestellformular",
+        "atika_form": "Atikaabdeckung Bestellformular",
+        "sh1_form": "SH1 Bestellformular",
+        "cutting_profiles": "Zuschnitt von HB-Profilen",
+        "materials_storage": "Lagerung von HB-Materialien",
+        "system_division": "Systemaufteilung"
+
+    },
+
+    "performance": {
+        "step_protection": "Trittschutzprofil",
+        "pressure_rail": "Anpresschiene"
+    },
+
+    "login": {
+        "sign_in": "Anmelden",
+        "username": "Benutzername",
+        "password": "Passwort"
+    },
+
+    "profile": {
+        "change_profile": "Profil Ändern",
+        "new_username": "Neuer Benutzername",
+        "new_password": "Neues Passwort",
+        "current_password": "Aktuelles Passwort"
+    }
+}
