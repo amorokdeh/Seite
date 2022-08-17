@@ -25,11 +25,11 @@ app.listen(process.env.PORT || 8080, function(){
 
   //Notwendige Informationen für die Verbindung zur MySQL-Datenbank
   const pool = mysql.createPool({
-    host: "eu-cdbr-west-03.cleardb.net",
+    host: "remotemysql.com",
     port: "3306",
-    user: "b7ffd035b7b257",
-    password: "65ea2445",
-    database: "heroku_7f7487bdff2a71b"
+    user: "X70OTbG0CT",
+    password: "1kLWlm1vI3",
+    database: "X70OTbG0CT"
   }); 
 
   
