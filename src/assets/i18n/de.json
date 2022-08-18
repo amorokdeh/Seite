@@ -1,0 +1,88 @@
+{
+    "home": {
+        "brochures": "PROSPEKTE",
+        "instructions": "ANLEITUNGEN",
+        "video_instructions": "VIDEOANLEITUNGEN",
+        "cads": "CAD ZEICHNUNGEN",
+        "environment": "UMWELT / NACHHALTIGKEIT",
+        "performance_texts": "LV LEISTUNGSTEXTE",
+        "ce": "CE ERKLÄRUNG / PATENTE",
+        "cost_planning": "KOSTENPLANUNG", 
+        "references": "REFERENZOBJEKTE",
+        "profile": "PROFIL",
+        "employee_list": "MITARBEITERLISTE",
+        "register_employees": "MITARBEITER REGISTRIEREN",
+        "delete_employees": "MITARBEITER LÖSCHEN"
+    },
+
+    "toolbar": {
+        "knowledge transfer": "Wissenstransfer",
+        "back": "Zurück",
+        "search": "Suche",
+        "log-in": "Login"
+    },
+
+    "brochures": {
+        "cassette_system": "Kassettensystem",
+        "quick_system": "Schnellsystem",
+        "wall_connection": "Wandanschluss",
+        "terrace_drainage": "Terrassenentwässerung",
+        "atika_cover": "Atikaabdeckung",
+        "folding_plate": "Abkantblech vom HB",
+        "first_construction": "Firstkonstruktion",
+        "standing_seam": "Stehfalz",
+        "guttering": "Dachrinnen und Zubehör", 
+        "accessories": "Zubehör",
+        "color_tables": "Farbtabellen"
+    },
+
+    "instructions": {
+        "profile_form": "Profil Bestellformular",
+        "atika_form": "Atikaabdeckung Bestellformular",
+        "sh1_form": "SH1 Bestellformular",
+        "cutting_profiles": "Zuschnitt von HB-Profilen",
+        "materials_storage": "Lagerung von HB-Materialien",
+        "system_division": "Systemaufteilung"
+
+    },
+
+    "performance": {
+        "step_protection": "Trittschutzprofil",
+        "pressure_rail": "Anpresschiene"
+    },
+
+    "environment": {
+        "eco_balance": "Ökobilanz"
+    },
+
+    "login": {
+        "sign_in": "Anmelden",
+        "username": "Benutzername",
+        "password": "Passwort",
+        "permissions": "Berechtigungen",
+        "register_user": "Nutzer registrieren",
+        "no_permission": "Keine Berechtigung",
+        "register": "Registrieren",
+        "delete_user": "Nutzer löschen",
+        "delete": "Löschen",
+        "user_deleted": "Mitarbeiter-Konto wurde erfolgreich gelöscht",
+        "employee_list": "Liste der Mitarbeiter",
+        "successful_reg": "Erfolgreich registriert!"
+    },
+
+    "profile": {
+        "change_profile": "Profil Ändern",
+        "new_username": "Neuer Benutzername",
+        "new_password": "Neues Passwort",
+        "current_password": "Aktuelles Passwort",
+        "change": "Ändern"
+    },
+
+    "error": {
+        "login_failed": "Login fehlgeschlagen",
+        "field_empty": " darf nicht leer sein",
+        "unknown_user": "Benutzer nicht gefunden",
+        "duplicate_user": "Benutzername existiert bereits",
+        "admin_delete": "Admin-Konto darf nicht gelöscht werden!"
+    }
+}

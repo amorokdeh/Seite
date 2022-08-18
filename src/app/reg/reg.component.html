@@ -1,0 +1,41 @@
+
+<div class="content">
+    <div *ngIf="adminBerechtigung === 'true'" class="card">
+        <div class="text-center">
+            <h1>
+                {{ 'login.register_user' | translate }}
+            </h1>
+    
+        </div>
+        <form>
+            <form [formGroup]="registrationForm" id="Formcontainer" (ngSubmit)="register(registrationForm.value)">
+                <div class="container">
+    
+                <label for="Benutzername" class="form-label">{{ 'login.username' | translate }}</label>
+                <input type="text" name="username" placeholder="{{ 'login.username' | translate }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="username" required>
+                
+                <label for="password" class="form-label">{{ 'login.password' | translate }}</label>
+                <input type="password" name="password" placeholder="{{ 'login.password' | translate }}" class="form-control" id="exampleInputPassword1" formControlName="passwort" required>
+                
+                <button type="submit" class="btn btn-primary">{{ 'login.register' | translate }}</button>
+                <h3>{{errorMes}}</h3>
+                </div>
+            </form>
+        </form>
+    
+    
+    </div>
+
+    <div *ngIf="adminBerechtigung === 'false'" class="card">
+        <div class="text-center">
+            <h1>
+                {{ 'login.no_permission' | translate }}
+            </h1>
+        
+        </div>
+    </div>
+
+</div>
+
+
+    

@@ -1,0 +1,42 @@
+<div class="content">
+  <div *ngIf="loggedIn === 'true'" class="card">
+      <div class="text-center">
+          <h1>
+            {{ 'profile.change_profile' | translate }}
+          </h1>
+  
+      </div>
+    <form>
+        <form [formGroup]="profilForm" (ngSubmit)="changeUser(profilForm.value)">
+            <div class="container">
+
+              <label for="Benutzername" class="form-label">{{'profile.new_username' | translate }}</label>
+              <input type="text" name="username" placeholder="{{'profile.new_username' | translate }}" class="form-control" formControlName="username" required>
+              
+              <label for="password" class="form-label">{{'profile.new_password' | translate }}</label>
+              <input type="password" name="password" placeholder="{{'profile.new_password' | translate }}" class="form-control" formControlName="passwort" required>
+              <br><br>
+              <label for="oldPassword" class="form-label">{{'profile.current_password' | translate }}</label>
+              <input type="password" name="oldPassword" placeholder="{{'profile.current_password' | translate }}" class="form-control" formControlName="oldPassword" required>
+
+              <button type="submit" class="btn btn-primary">{{'profile.change' | translate }}</button>
+            
+              <h3>{{errorMes}}</h3>
+            </div>
+          </form>
+    </form>
+
+
+  </div>
+
+  <div *ngIf="loggedIn === 'false'" class="card">
+    <div class="text-center">
+        <h1>
+            {{ 'login.no_permission' | translate }}
+        </h1>
+    
+    </div>
+  </div>
+</div>
+
+    
