@@ -7,8 +7,9 @@
  }
 
  :focus {
-   outline: 3px solid red;   
- }         
+  outline: 2px solid rgb(27, 156, 255);   
+}   
+      
 
 #footer {   
     position:fixed;

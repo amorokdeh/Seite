@@ -8,7 +8,11 @@
         "performance_texts": "TEKSTY O WYDAJNOŚCI",
         "ce": "DEKLARACJA CE/PATENTY",
         "cost_planning": "PLANOWANIE KOSZTÓW", 
-        "references": "OBIEKTY REFERENCYJNE"
+        "references": "OBIEKTY REFERENCYJNE",
+        "profil": "PROFIL",
+        "employee_list": "LISTA PRACOWNIKÓW",
+        "register_employees": "ZAREJESTRUJ PRACOWNIKÓW",
+        "delete_employees": "USUŃ PRACOWNIKÓW"
     },
 
     "toolbar": {
@@ -47,16 +51,36 @@
         "pressure_rail": "Szyna ciśnieniowa"
     },
 
+    "environment": {
+        "eco_balance": "Równowaga ekologiczna"
+    },
+
     "login": {
         "sign_in": "Zaloguj się",
         "username": "Nazwa użytkownika",
-        "password": "Hasło"
-    },
+        "password": "Hasło",
+        "permissions": "uprawnienia",
+        "register_user": "Zarejestruj Użytkownika",
+        "no_permission": "Brak pozwolenia",
+        "register": "Zarejestruj się",
+        "delete_user": "Usuń użytkownika",
+        "delete": "Usuń",
+        "user_deleted": "Konto pracownika zostało pomyślnie usunięte",
+        "employee_list": "Lista zatrudnionych"
+        },
 
-    "profil": {
+    "profile": {
         "change_profile": "Zmień profil",
         "new_username": "Nowa nazwa użytkownika",
         "new_password": "Nowe hasło",
-        "current_password": "Aktualne hasło"
+        "current_password": "Aktualne hasło",
+        "change": "Zatwierdź"
+    },
+
+    "error": {
+        "login_failed": "Logowanie nie powiodło się",
+        "field_empty": "nie może być puste",
+        "unknown_user": "Nie znaleziono użytkownika",
+        "admin_delete": "Konto administratora nie może zostać usunięte!"
     }
 }

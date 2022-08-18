@@ -7,6 +7,7 @@ import { AuthGuard } from '../auth.guard';
 import { Router} from '@angular/router';
 import { ExchangeService } from '../services/exchange.service';
 import { Verwaltung } from '../models/Verwaltung';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -28,7 +29,8 @@ export class ListComponent implements OnInit {
   constructor(private authService: AuthService,
   private formBuilder: FormBuilder,
   private auth: AuthGuard,
-  private data: ExchangeService) {
+  private data: ExchangeService,
+  private translate: TranslateService) {
 
       this.listForm = this.formBuilder.group({
         
@@ -52,7 +54,7 @@ export class ListComponent implements OnInit {
 
   getUser(userData){
     //überprüfen ob ein Feld leer ist
-    if(this.isEmpty(userData.username[0], "Benutzername")) {
+    if(this.isEmpty(userData.username[0], this.translate.instant('login.username'))) {
       return;
     }
     this.authService.getUserByUsername(userData.username).subscribe((user: Verwaltung) => {
@@ -63,7 +65,7 @@ export class ListComponent implements OnInit {
         this.allUsers.push(this.user);
         this.errorMes = " ";
       } else{
-        this.errorMes = 'Benutzer nicht gefunden';
+        this.errorMes = this.translate.instant('error.unknown_user');
       }
     })
   }
@@ -78,7 +80,7 @@ export class ListComponent implements OnInit {
 
   isEmpty(str, Message) : boolean{
     if(!str || str.length === 0){
-      this.errorMes = Message + ' Darf nicht leer sein';
+      this.errorMes = Message + this.translate.instant('error.field_empty');
       return true;
     } else {
       return false;

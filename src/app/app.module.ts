@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { VideoComponent } from './video/video.component';
 import { ProfilComponent } from './profil/profil.component';
 import { AuthGuard } from './auth.guard';
 
@@ -34,7 +33,6 @@ import { ImprintFooterComponent } from './imprint-footer/imprint-footer.componen
   declarations: [
     AppComponent,
     HomeComponent,
-    VideoComponent,
     ToolbarComponent,
     LoginComponent,
     RegComponent,

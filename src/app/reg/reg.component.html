@@ -3,7 +3,7 @@
     <div *ngIf="adminBerechtigung === 'true'" class="card">
         <div class="text-center">
             <h1>
-                {{ 'Mitarbeiter registrieren' | translate }}
+                {{ 'login.register_user' | translate }}
             </h1>
     
         </div>
@@ -17,7 +17,7 @@
                 <label for="password" class="form-label">{{ 'login.password' | translate }}</label>
                 <input type="password" name="password" placeholder="{{ 'login.password' | translate }}" class="form-control" id="exampleInputPassword1" formControlName="passwort" required>
                 
-                <button type="submit" class="btn btn-primary">{{ 'Registrieren' | translate }}</button>
+                <button type="submit" class="btn btn-primary">{{ 'login.register' | translate }}</button>
                 <h3>{{errorMes}}</h3>
                 </div>
             </form>
@@ -29,7 +29,7 @@
     <div *ngIf="adminBerechtigung === 'false'" class="card">
         <div class="text-center">
             <h1>
-                {{ 'Keine Berechtigung' | translate }}
+                {{ 'login.no_permission' | translate }}
             </h1>
         
         </div>

@@ -8,7 +8,11 @@
         "performance_texts": "TEXTES DE PERFORMANCES",
         "ce": "DECLARATION CE / BREVETS",
         "cost_planning": "PLANIFICATION DES COÛTS", 
-        "references": "OBJETS DE RÉFÉRENCE"
+        "references": "OBJETS DE RÉFÉRENCE",
+        "profil": "PROFIL",
+        "employee_list": "LISTE DES EMPLOYÉS",
+        "register_employees": "ENREGISTRER LES EMPLOYÉS",
+        "delete_employees": "SUPPRIMER DES EMPLOYÉS"
     },
 
     "toolbar": {
@@ -47,16 +51,36 @@
         "pressure_rail": "Rail de pression"
     },
 
+    "environment": {
+        "eco_balance": "Balance écologique"
+    },
+
     "login": {
         "sign_in": "Connecter",
         "username": "Nom d'utilisateur",
-        "password": "Mot de passe"
+        "password": "Mot de passe",
+        "permissions": "autorisations",
+        "register_user": "Enregistrer l'utilisateur",
+        "no_permission": "Aucune autorisation",
+        "register": "S'inscrire",
+        "delete_user": "Supprimer l'utilisateur",
+        "delete": "Supprimer",
+        "user_deleted": "Compte employé supprimé avec succès",
+        "employee_list": "Liste des employés"
     },
 
-    "profil": {
+    "profils": {
         "change_profile": "Changer de profil",
         "new_username": "Nouveau nom d'utilisateur",
         "new_password": "Nouveau mot de passe",
-        "current_password": "Mot de passe actuel"
+        "current_password": "Mot de passe actuel",
+        "change": "Soumettre"
+    },
+
+    "error": {
+        "login_failed": "La connexion a échoué",
+        "field_empty": "ne doit pas être vide",
+        "unknown_user": "Utilisateur introuvable",
+        "admin_delete": "Le compte administrateur ne doit pas être supprimé!"
     }
 }

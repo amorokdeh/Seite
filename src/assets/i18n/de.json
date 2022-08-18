@@ -8,7 +8,11 @@
         "performance_texts": "LV LEISTUNGSTEXTE",
         "ce": "CE ERKLÄRUNG / PATENTE",
         "cost_planning": "KOSTENPLANUNG", 
-        "references": "REFERENZOBJEKTE"
+        "references": "REFERENZOBJEKTE",
+        "profile": "PROFIL",
+        "employee_list": "MITARBEITERLISTE",
+        "register_employees": "MITARBEITER REGISTRIEREN",
+        "delete_employees": "MITARBEITER LÖSCHEN"
     },
 
     "toolbar": {
@@ -47,16 +51,36 @@
         "pressure_rail": "Anpresschiene"
     },
 
+    "environment": {
+        "eco_balance": "Ökobilanz"
+    },
+
     "login": {
         "sign_in": "Anmelden",
         "username": "Benutzername",
-        "password": "Passwort"
+        "password": "Passwort",
+        "permissions": "Berechtigungen",
+        "register_user": "Nutzer registrieren",
+        "no_permission": "Keine Berechtigung",
+        "register": "Registrieren",
+        "delete_user": "Nutzer löschen",
+        "delete": "Löschen",
+        "user_deleted": "Mitarbeiter-Konto wurde erfolgreich gelöscht",
+        "employee_list": "Liste der Mitarbeiter"
     },
 
     "profile": {
         "change_profile": "Profil Ändern",
         "new_username": "Neuer Benutzername",
         "new_password": "Neues Passwort",
-        "current_password": "Aktuelles Passwort"
+        "current_password": "Aktuelles Passwort",
+        "change": "Ändern"
+    },
+
+    "error": {
+        "login_failed": "Login fehlgeschlagen",
+        "field_empty": "darf nicht leer sein",
+        "unknown_user": "Benutzer nicht gefunden",
+        "admin_delete": "Admin-Konto darf nicht gelöscht werden!"
     }
 }

@@ -7,12 +7,12 @@
   }
   
   :focus {
-    outline: 3px solid red;   
+    outline: 2px solid rgb(27, 156, 255);   
   }         
   
   .content {
     position: absolute;
-    margin-top: 120px;
+    margin-top: 100px;
     background: url('/assets/img/kosten_bg.png');
     background-size: cover;
     width: 100%;

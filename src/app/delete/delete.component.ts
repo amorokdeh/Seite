@@ -4,6 +4,7 @@ import { FormBuilder } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { Router} from '@angular/router';
 import { ExchangeService } from '../services/exchange.service';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -22,7 +23,8 @@ export class DeleteComponent implements OnInit {
   constructor(private authService: AuthService,
               private formBuilder: FormBuilder,
               private router: Router,
-              private data: ExchangeService) {
+              private data: ExchangeService,
+              private translate: TranslateService) {
 
       this.deleteForm = this.formBuilder.group({
       username: ''
@@ -43,33 +45,33 @@ export class DeleteComponent implements OnInit {
   //Methode zu GetUser
   getUser(deleteData) {
     //überprüfen ob ein Feld leer ist
-    if(this.isEmpty(deleteData.username[0], "Benutzername")) {
+    if(this.isEmpty(deleteData.username[0], this.translate.instant('login.username'))) {
       return;
     }
     this.authService.getUserByUsername(deleteData.username).subscribe((user: Verwaltung) => {
     //Übergabe in einer Variable des Typs User
       if(user != null) {
         if(user.berechtigung == "Admin") {
-          this.errorMes = "Admin-Konto darf nicht gelöscht werden!";
+          this.errorMes = this.translate.instant('error.admin_delete');
           return;
         }
         this.authService.deleteUser(deleteData.username).subscribe(data => {
           this.authService.deleteUserinVerwaltung(deleteData.username).subscribe(data => {
-            alert("Mitarbeiter-Konto wurde erfolgreich gelöscht!")
+            alert(this.translate.instant('login.user_deleted'))
             //Automatische Weiterleitung zu Home
             this.router.navigate(['/'])
           })
         })
       } else {
       //Falls der Login nicht erfolgreich war, wird eine kurze Meldung ausgegeben
-      this.errorMes = "Benutzername nicht gefunden!";
+      this.errorMes = this.translate.instant('error.unknown_user');
       }
     });
   }
 
   isEmpty(str, Message) : boolean{
     if(!str || str.length === 0){
-      this.errorMes = Message + ' Darf nicht leer sein';
+      this.errorMes = Message + this.translate.instant('error.field_empty');
       return true;
     } else {
       return false;

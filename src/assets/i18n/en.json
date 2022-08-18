@@ -8,7 +8,11 @@
         "performance_texts": "PERFORMANCE TEXTS",
         "ce": "CE DECLARATION / PATENTS",
         "cost_planning": "COST PLANNING", 
-        "references": "REFERENCE OBJECTS"
+        "references": "REFERENCE OBJECTS",
+        "profile": "PROFILE",
+        "employee_list": "EMPLOYEE LIST",
+        "register_employees": "REGISTER EMPLOYEES",
+        "delete_employees": "DELETE EMPLOYEES"
     },
 
     "toolbar": {
@@ -46,16 +50,36 @@
         "pressure_rail": "Pressure Rail"
     },
 
+    "environment": {
+        "eco_balance": "Eco Balance"
+    },
+
     "login": {
         "sign_in": "Log In",
         "username": "Username",
-        "password": "Password"
-    },
+        "password": "Password",
+        "permissions": "Permissions",
+         "register_user": "Register User",
+         "no_permission": "No permission",
+         "register": "Register",
+         "delete_user": "Delete User",
+         "delete": "Delete",
+         "user_deleted": "Employee account deleted successfully",
+         "employee_list": "List of employees"
+     },
 
-    "profile": {
-        "change_profile": "Change Profile",
-        "new_username": "New Username",
-        "new_password": "New Password",
-        "current_password": "Current Password"
-    }
+     "profile": {
+         "change_profile": "Change Profile",
+         "new_username": "New username",
+         "new_password": "New password",
+         "current_password": "Current password",
+         "change": "Submit"
+     },
+
+     "error": {
+         "login_failed": "Login failed",
+         "field_empty": "must not be empty",
+         "unknown_user": "User not found",
+         "admin_delete": "Admin account must not be deleted!"
+     }
 }

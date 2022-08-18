@@ -6,26 +6,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+:focus {
+  outline: 2px solid rgb(27, 156, 255);   
+}   
+
 .content {
   position: absolute;
-  margin-top: 110px;
+  margin-top: 100px;
   background: url('/assets/img/home_bg.png');
   background-size: cover;
   width: 100%;
   min-height: 100%;
   height:auto;
-}
-
-.image img{
-  margin-left: 0%;
-  margin-right: 0%;
-  width:100%;
-  height: auto;
-  object-fit: fill;
-}
-
-svg.material-icons:not(:last-child) {
-  margin-right: 8px;
 }
 
 .card-container {
@@ -58,9 +50,6 @@ svg.material-icons:not(:last-child) {
   font-weight: bold;
 }
 
-:focus {
-  outline: 3px solid red;   
-}
 
 .card-container .card:not(:last-child) {
   margin-right: 0;

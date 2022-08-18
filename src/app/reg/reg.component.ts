@@ -80,7 +80,7 @@ export class RegComponent implements OnInit {
           })
     })
       } else {
-        this.errorMes = "Benutzername existiert bereits"
+        this.errorMes = "Benutzername existiert bereits";
       }
     })
   }

@@ -7,12 +7,18 @@
   color: rgb(255, 255, 255);
 }
 
+:focus {
+  outline: 2px solid rgb(27, 156, 255);   
+}   
+
+
 .card{
     margin: auto;
     margin-top: 110px;
     width: 30%;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.4);
+    min-width: 300px;
   }
 
   .list{
@@ -92,6 +98,7 @@
     width: 30%;
     font-size: 14pt;
     font-weight: bold;
+    min-width: 150px;
   }
   
   button:hover {

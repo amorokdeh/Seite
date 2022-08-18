@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VideoComponent } from './video/video.component';
 import { LoginComponent } from './login/login.component';
 import { RegComponent } from './reg/reg.component';
 import { DeleteComponent } from './delete/delete.component';
@@ -21,7 +20,6 @@ import { AuthGuard } from './auth.guard';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent, canActivate:[AuthGuard] },
-  { path: 'app-video', component: VideoComponent },
   { path: 'login', component: LoginComponent},
   { path: 'profil', component: ProfilComponent },
   { path: 'list', component: ListComponent},

@@ -7,7 +7,7 @@
   }
   
   :focus {
-    outline: 3px solid red;   
+    outline: 2px solid rgb(27, 156, 255);   
   }         
   
   .content {
@@ -20,19 +20,6 @@
     height:auto;
   }
   
-  
-  
-  .image img{
-    margin-left: 0%;
-    margin-right: 0%;
-    width:100%;
-    height: auto;
-    object-fit: fill;
-  }
-  
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  }
   
   .card-container {
     margin-left: 80px;

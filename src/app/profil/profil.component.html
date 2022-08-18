@@ -19,7 +19,7 @@
               <label for="oldPassword" class="form-label">{{'profile.current_password' | translate }}</label>
               <input type="password" name="oldPassword" placeholder="{{'profile.current_password' | translate }}" class="form-control" formControlName="oldPassword" required>
 
-              <button type="submit" class="btn btn-primary">{{'Ändern' | translate }}</button>
+              <button type="submit" class="btn btn-primary">{{'profile.change' | translate }}</button>
             
               <h3>{{errorMes}}</h3>
             </div>
@@ -32,7 +32,7 @@
   <div *ngIf="loggedIn === 'false'" class="card">
     <div class="text-center">
         <h1>
-            {{ 'Keine Berechtigung' | translate }}
+            {{ 'login.no_permission' | translate }}
         </h1>
     
     </div>

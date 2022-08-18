@@ -2,7 +2,7 @@
     <div *ngIf="adminBerechtigung === 'true'" class="card">
         <div class="text-center">
             <h1>
-                {{ 'Mitarbeiter löschen' | translate }}
+                {{ 'login.delete_user' | translate }}
             </h1>
     
         </div>
@@ -13,7 +13,7 @@
                 <label for="Benutzername" class="form-label">{{ 'login.username' | translate }}</label>
                 <input type="text" name="username" placeholder="{{ 'login.username' | translate }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="username" required>
                 
-                <button type="submit" class="btn btn-primary">{{ 'Löschen' | translate }}</button>
+                <button type="submit" class="btn btn-primary">{{ 'login.delete' | translate }}</button>
                 
                 <h3>{{errorMes}}</h3>
                 </div>
@@ -26,7 +26,7 @@
     <div *ngIf="adminBerechtigung === 'false'" class="card">
         <div class="text-center">
             <h1>
-                {{ 'Keine Berechtigung' | translate }}
+                {{ 'login.no_permission' | translate }}
             </h1>
         
         </div>

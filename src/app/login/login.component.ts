@@ -7,6 +7,7 @@ import { AuthGuard } from '../auth.guard';
 import { Router} from '@angular/router';
 import { ExchangeService } from '../services/exchange.service';
 import { Verwaltung } from '../models/Verwaltung';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -28,7 +29,8 @@ export class LoginComponent implements OnInit {
   private formBuilder: FormBuilder,
   private auth: AuthGuard,
   private router: Router,
-  private data: ExchangeService) {
+  private data: ExchangeService,
+  private translate: TranslateService) {
 
       this.loginForm = this.formBuilder.group({
         
@@ -36,7 +38,6 @@ export class LoginComponent implements OnInit {
       passwort: ''
     })
   }
-
   ngOnInit(): void {
     this.errorMes = " ";
   }
@@ -44,8 +45,8 @@ export class LoginComponent implements OnInit {
   //Methode zum einloggen
   getUser(loginData) {
     //überprüfen ob ein Feld leer ist
-    if(this.isEmpty(loginData.username[0], "Benutzername") || 
-       this.isEmpty(loginData.passwort[0], "Passwort")) {
+    if(this.isEmpty(loginData.username[0], this.translate.instant('login.username')) || 
+       this.isEmpty(loginData.passwort[0], this.translate.instant('login.password'))) {
       return;
     }
     //Verschlüsselt das eingegebene Passwort mit SHA256
@@ -60,11 +61,9 @@ export class LoginComponent implements OnInit {
         //this.permission = this.auth.canActivate();
         //Automatische Weiterleitung zu Home
         this.router.navigate(['/']).then(() => {
-          //window.location.reload();
           this.interval = setInterval(() => {
             window.location.reload();
          }, 500);
-
         });
         //Loginbutton wird geswitched
         this.switchButtonMessage();
@@ -78,7 +77,7 @@ export class LoginComponent implements OnInit {
         })
       } else {
       //Falls der Login nicht erfolgreich war, wird eine kurze Meldung ausgegeben
-      this.errorMes = "Das hat leider nicht geklappt!";
+      this.errorMes = this.translate.instant('error.login_failed');
       }
     });
   }
@@ -102,7 +101,7 @@ export class LoginComponent implements OnInit {
 
   isEmpty(str, Message) : boolean{
     if(!str || str.length === 0){
-      this.errorMes = Message + ' darf nicht leer sein';
+      this.errorMes = Message + this.translate.instant('error.field_empty');
       return true;
     } else {
       return false;

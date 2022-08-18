@@ -4,7 +4,7 @@
     <div class="card">
         <div class="text-center">
             <h1>
-                {{ 'Liste aller Mitarbeiter' | translate }}
+                {{ 'login.employee_list' | translate }}
             </h1>
     
         </div>
@@ -15,8 +15,8 @@
                 <label for="Benutzername" class="form-label">{{ 'login.username' | translate }}</label>
                 <input type="text" name="username" placeholder="{{ 'login.username' | translate }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="username" required>
                 
-                <button *ngIf="search === 'false'" type="submit" class="btn btn-primary">{{ 'Suchen' | translate }}</button>
-                <button *ngIf="search === 'true'" class="btn btn-primary" (click)="getAllUsers()">{{ 'Zurück' | translate }}</button>
+                <button *ngIf="search === 'false'" type="submit" class="btn btn-primary">{{ 'toolbar.search' | translate }}</button>
+                <button *ngIf="search === 'true'" class="btn btn-primary" (click)="getAllUsers()">{{ 'toolbar.back' | translate }}</button>
                 <h3>{{errorMes}}</h3>
                 </div>
             </form>
@@ -25,8 +25,8 @@
     <br><br>
         <div class="list">
             <tr>
-                <th>Benutzername</th>
-                <th>Berechtigung</th>
+                <th>{{ 'login.username' | translate }}</th>
+                <th>{{ 'login.permissions' | translate }}</th>
               </tr>
               <tr *ngFor="let user of allUsers">
                 <td>{{user.benutzername}}</td>
@@ -39,7 +39,7 @@
     <div *ngIf="adminBerechtigung === 'false'" class="card">
         <div class="text-center">
             <h1>
-                {{ 'Keine Berechtigung' | translate }}
+                {{ 'login.no_permission' | translate }}
             </h1>
         
         </div>

@@ -8,56 +8,56 @@
 
   <div class="card-container">
     
-    <button class="card card-small" (click)="selection.value = 'dependency'"  routerLink= "brochures" routerLinkActive="active">
-      <span>{{ 'home.brochures' | translate }}</span>
+    <button class="card card-small" tabindex="-1" (click)="selection.value = 'dependency'"  routerLink= "brochures" routerLinkActive="active">
+      <span tabindex="0" >{{ 'home.brochures' | translate }}</span>
     </button>
 
-    <button class="card card-small" (click)="selection.value = 'dependency'" routerLink= "instructions" routerLinkActive="active">
-      <span>{{ 'home.instructions' | translate }}</span>
+    <button class="card card-small"  tabindex="-1"(click)="selection.value = 'dependency'" routerLink= "instructions" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.instructions' | translate }}</span>
     </button>
 
-    <button class="card card-small" (click)="selection.value = 'test'" routerLink= "video_instructions" routerLinkActive="active">
-      <span>{{ 'home.video_instructions' | translate }}</span>
+    <button class="card card-small"  tabindex="-1" (click)="selection.value = 'test'" routerLink= "video_instructions" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.video_instructions' | translate }}</span>
     </button>
 
-    <button class="card card-small" (click)="selection.value = 'build'" routerLink= "cad" routerLinkActive="active">
-      <span>{{ 'home.cads' | translate }}</span>
+    <button class="card card-small" tabindex="-1" (click)="selection.value = 'build'" routerLink= "cad" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.cads' | translate }}</span>
     </button>
 
-    <button class="card card-small" (click)="selection.value = 'build'" routerLink= "environment" routerLinkActive="active">
-      <span>{{ 'home.environment' | translate }}</span>
+    <button class="card card-small" tabindex="-1" (click)="selection.value = 'build'" routerLink= "environment" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.environment' | translate }}</span>
     </button>
 
-    <button class="card card-small" (click)="selection.value = 'build'" routerLink= "performance_texts" routerLinkActive="active">
-      <span>{{ 'home.performance_texts' | translate }}</span>
+    <button class="card card-small" tabindex="-1" (click)="selection.value = 'build'" routerLink= "performance_texts" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.performance_texts' | translate }}</span>
     </button>
 
-    <button class="card card-small" (click)="selection.value = 'build'" routerLink= "ce" routerLinkActive="active">
-      <span>{{ 'home.ce' | translate }}</span>
+    <button class="card card-small" tabindex="-1" (click)="selection.value = 'build'" routerLink= "ce" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.ce' | translate }}</span>
     </button>
 
-    <button class="card card-small" (click)="selection.value = 'build'" routerLink= "cost_planning" routerLinkActive="active">
-      <span>{{ 'home.cost_planning' | translate }}</span>
+    <button class="card card-small" tabindex="-1" (click)="selection.value = 'build'" routerLink= "cost_planning" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.cost_planning' | translate }}</span>
     </button>
 
-    <button class="card card-small" (click)="selection.value = 'build'" routerLink= "reference_projects" routerLinkActive="active">
-      <span>{{ 'home.references' | translate }}</span>
+    <button class="card card-small" tabindex="-1" (click)="selection.value = 'build'" routerLink= "reference_projects" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.references' | translate }}</span>
     </button>
 
-    <button *ngIf="loggedIn === 'true'" class="card card-small" (click)="selection.value = 'build'" tabindex="0" routerLink= "profil" routerLinkActive="active">
-      <span>{{ 'PROFIL' | translate }}</span>
+    <button *ngIf="loggedIn === 'true'" tabindex="-1" class="card card-small" (click)="selection.value = 'build'" tabindex="0" routerLink= "profil" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.profile' | translate }}</span>
     </button>
 
-    <button *ngIf="adminBerechtigung === 'true'" class="card card-small" (click)="selection.value = 'build'" tabindex="0" routerLink= "list" routerLinkActive="active">
-      <span>{{ 'Mitarbeiterliste' | translate }}</span>
+    <button *ngIf="adminBerechtigung === 'true'" tabindex="-1" class="card card-small" (click)="selection.value = 'build'" tabindex="0" routerLink= "list" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.employee_list' | translate }}</span>
     </button>
 
-    <button *ngIf="adminBerechtigung === 'true'" class="card card-small" (click)="selection.value = 'build'" tabindex="0" routerLink= "reg" routerLinkActive="active">
-      <span>{{ 'Mitarbeiter registrieren' | translate }}</span>
+    <button *ngIf="adminBerechtigung === 'true'" tabindex="-1" class="card card-small" (click)="selection.value = 'build'" tabindex="0" routerLink= "reg" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.register_employees' | translate }}</span>
     </button>
 
-    <button *ngIf="adminBerechtigung === 'true'" class="card card-small" (click)="selection.value = 'build'" tabindex="0" routerLink= "delete" routerLinkActive="active">
-      <span>{{ 'Mitarbeiter löschen' | translate }}</span>
+    <button *ngIf="adminBerechtigung === 'true'" tabindex="-1" class="card card-small" (click)="selection.value = 'build'" tabindex="0" routerLink= "delete" routerLinkActive="active">
+      <span tabindex="0">{{ 'home.delete_employees' | translate }}</span>
     </button>
 
   </div>

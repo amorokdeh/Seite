@@ -9,7 +9,6 @@
   <div id="Logo">
     <a routerLink= "" routerLinkActive="active" >
       <img src="assets/img/blechwerk_logo.png"  aria-label="Return to Home">
-      <!-- TODO: Mit neuem Logo ersetzen -->
     </a>
 
     <a id="downloadCenter">
@@ -84,9 +83,9 @@
     </a>
   
     <div class="wrap">
-      <form class="search" id="suchleiste_burger" >
-        <input class="searchTerm" #myNameElem2 type="text" placeholder="{{'toolbar.search' | translate }}" aria-label="Search" tabindex="-1">
-        <button class="searchButton" (click)="search2()" id="search_btn_burger"  type="submit" tabindex="-1">
+      <form class="search" id="suchleiste_burger"  >
+        <input tabindex="0" class="searchTerm" #myNameElem2 type="text" placeholder="{{'toolbar.search' | translate }}" aria-label="Search">
+        <button tabindex="0" class="searchButton" (click)="search2()" id="search_btn_burger"  type="submit">
           <i class="fa fa-search"></i>
         </button>
       </form>
