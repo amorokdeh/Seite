@@ -11,7 +11,7 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  private hostname : string = "https://wissenstranfer.herokuapp.com"
+  private hostname : string = "https://wissenstransfer.herokuapp.com"
   //for local host:
   //private hostname : string = 'http://localhost:8080';
   // Hier werden die Adressen, der funktionen in der Server.js gespeichert
