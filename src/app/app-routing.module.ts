@@ -16,6 +16,10 @@ import { CostPlanningComponent } from './cost-planning/cost-planning.component';
 import { ReferenceProjectsComponent } from './reference-projects/reference-projects.component';
 import { ProfilComponent } from './profil/profil.component';
 import { AuthGuard } from './auth.guard';
+import { ReferenceAtikaComponent } from './reference-atika/reference-atika.component';
+import { ReferenceSchnellpanelComponent } from './reference-schnellpanel/reference-schnellpanel.component';
+import { ReferenceKassetteComponent } from './reference-kassette/reference-kassette.component';
+import { ReferenceAnpressschieneComponent } from './reference-anpressschiene/reference-anpressschiene.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -34,9 +38,13 @@ const routes: Routes = [
   { path: 'ce', component: CEComponent },
   { path: 'cost_planning', component: CostPlanningComponent },
   { path: 'reference_projects', component: ReferenceProjectsComponent },
+  { path: 'reference_projects/reference_Atika', component: ReferenceAtikaComponent},
+  { path: 'reference_projects/reference_Quick', component: ReferenceSchnellpanelComponent},
+  { path: 'reference_projects/reference_Cassette', component: ReferenceKassetteComponent},
+  { path: 'reference_projects/reference_Rail', component: ReferenceAnpressschieneComponent},
 
   // otherwise redirect to home
-  { path: '**', redirectTo: '' }
+ { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

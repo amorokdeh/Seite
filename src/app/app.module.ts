@@ -27,6 +27,10 @@ import { CEComponent } from './ce/ce.component';
 import { CostPlanningComponent } from './cost-planning/cost-planning.component';
 import { ReferenceProjectsComponent } from './reference-projects/reference-projects.component';
 import { ImprintFooterComponent } from './imprint-footer/imprint-footer.component';
+import { ReferenceAtikaComponent } from './reference-atika/reference-atika.component';
+import { ReferenceAnpressschieneComponent } from './reference-anpressschiene/reference-anpressschiene.component';
+import { ReferenceSchnellpanelComponent } from './reference-schnellpanel/reference-schnellpanel.component';
+import { ReferenceKassetteComponent } from './reference-kassette/reference-kassette.component';
 
 
 @NgModule({
@@ -49,6 +53,10 @@ import { ImprintFooterComponent } from './imprint-footer/imprint-footer.componen
     CostPlanningComponent,
     ReferenceProjectsComponent,
     ImprintFooterComponent,
+    ReferenceAtikaComponent,
+    ReferenceAnpressschieneComponent,
+    ReferenceSchnellpanelComponent,
+    ReferenceKassetteComponent,
   ],
   imports: [
     BrowserModule,
